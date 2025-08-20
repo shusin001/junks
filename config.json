@@ -1,0 +1,16 @@
+{
+    "commands": {
+        "play": "play",
+        "time": "time",
+        "who_the_heck_is": "who the heck is",
+        "date": "date",
+        "are_you_single": "are you single",
+        "joke": "joke",
+        "add_to_do": "add to do",
+        "list_to_do": "list to do",
+        "weather": "weather in",
+        "send_email": "send email",
+        "set_reminder": "set reminder",
+        "smart_home": "smart home"
+    }
+}
