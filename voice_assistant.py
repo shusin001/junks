@@ -11,7 +11,7 @@ import time
 import json
 import threading
 
-# --- Core Setup ---
+
 # Initialize the speech recognition and text-to-speech engines.
 # It's good practice to set up your voice and properties right at the start.
 listener = sr.Recognizer()
