@@ -12,7 +12,7 @@ import json
 import threading
 from gemini_integration import ask_gemini
 
-# --- Core Setup ---
+
 # Initialize the speech recognition and text-to-speech engines.
 # It's good practice to set up your voice and properties right at the start.
 listener = sr.Recognizer()
