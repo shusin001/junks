@@ -12,6 +12,7 @@ This is a voice assistant project created using Python. It can perform various t
 - Sends emails (requires configuration)
 - Sets reminders
 - Controls smart home devices (placeholder)
+-a full-fledge ai-bot
 
 ## Setup
 
@@ -45,11 +46,9 @@ For example:
 - "Alexa, what's the time?"
 - "Alexa, play a song by Queen"
 - "Alexa, add 'buy groceries' to my to-do list"
-- "Alexa, what's the weather in London?"
+- "Alexa, what's the weather in London?"......
 
-## Privacy and Security
 
-Please be aware of the privacy and security implications of using a voice assistant. The assistant will have access to your microphone and may store your voice commands. If you configure the email feature, the assistant will also have access to your email credentials.
 
 ## Future Improvements
 
