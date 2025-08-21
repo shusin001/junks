@@ -10,6 +10,7 @@ import smtplib
 import time
 import json
 import threading
+from gemini_integration import ask_gemini
 
 # --- Core Setup ---
 # Initialize the speech recognition and text-to-speech engines.
@@ -27,8 +28,8 @@ try:
     with open('config.json') as f:
         config = json.load(f)
         COMMANDS = config['commands']
-        EMAIL_ADDRESS = config.get('email_address')
-        EMAIL_PASSWORD = config.get('email_password')
+        EMAIL_ADDRESS = config.get('u757bk@gmail.com')
+        EMAIL_PASSWORD = config.get('qaz123p0lm')
         WEATHER_API_KEY = config.get('weather_api_key')
 except FileNotFoundError:
     print("Error: 'config.json' not found. Please create one with your settings.")
@@ -216,7 +217,8 @@ def run_ramu():
         talk('This feature is currently a placeholder. Please connect your smart home API here.')
         # control_smart_home(device, action) # Placeholder for a real API call.
     else:
-        talk('I\'m not sure how to handle that. Could you please rephrase your command?')
+        response = ask_gemini(command)
+        talk(response)
 
 # --- Execution Loop ---
 if __name__ == '__main__':
